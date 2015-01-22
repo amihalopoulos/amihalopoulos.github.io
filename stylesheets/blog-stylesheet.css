@@ -1,0 +1,60 @@
+#logo {
+  display: inline;
+  font-size: 32px;
+  color: blue;
+}
+
+#summary {
+  font-size: 12px;
+  display: inline-block;
+}
+
+#navbar {
+
+  background-color: blue;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+span {
+  background-color: white;
+  margin-left: 20px;
+  padding: 8px 15px;
+  border: 5px solid black;
+  border-radius: 20%;
+  line-height: 50px;
+  }
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+.content {
+
+  margin-top: 10px;
+  width:100%;
+
+}
+
+#list_box {
+  border: 2px solid black;
+  float: left;
+  width: 30%;
+  margin-left: 50px;
+}
+
+#blog_posts_wrapper {
+  border: 2px solid black;
+  display: inline-block;
+  height: 600px;
+  width: 55%;
+  overflow: scroll;
+}
+
+#blog_header {
+  background-color: gray;
+
+}
+
