@@ -1,0 +1,48 @@
+body {
+  background-color: #cccccc;
+
+}
+#jumbotron {
+  background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
+  background-position: 0px -200px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#title {
+  padding-top: 120px;
+  text-align: center;
+  position: relative;
+}
+
+#title h1 {
+  font-size: 48px;
+  font-family: 'Chewy', cursive;
+}
+
+#title h4 {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+#navbar {
+  height: 50px;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  text-align: center;
+}
+
+#navbar ul {
+  position: relative;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 15px 50px;
+  color: white;
+  font-size: 20px;
+}
