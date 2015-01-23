@@ -2,6 +2,7 @@ body {
   background-color: #cccccc;
 
 }
+
 #jumbotron {
   background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
   background-position: 0px -200px;
@@ -9,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  clear:right;
 }
 
 #title {
@@ -45,4 +47,19 @@ body {
   padding: 15px 50px;
   color: white;
   font-size: 20px;
+}
+
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#twitterbox {
+  margin-left: 50px;
 }
