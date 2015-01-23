@@ -63,3 +63,33 @@ a:hover {
 #twitterbox {
   margin-left: 50px;
 }
+
+/* Below this is for the blog styling */
+.content {
+
+  margin-top: 10px;
+  width:100%;
+
+}
+
+#list_box {
+  border: 2px solid black;
+  float: left;
+  width: 30%;
+  margin-left: 50px;
+}
+
+#blog_posts_wrapper {
+  border: 2px solid black;
+  display: inline-block;
+  height: 600px;
+  width: 55%;
+  overflow: scroll;
+  margin-left: 15px;
+}
+
+#blog_header {
+  background-color: gray;
+  text-align: center;
+}
+
