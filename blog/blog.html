@@ -63,30 +63,35 @@
         <h4>Friday Jan 24, 2015</h4>
       </div>
       <section>
-        <p>What does it mean to display inline vs inline blocks?
-
+        <p>What does it mean to display inline vs inline blocks?</p>
+            <p>
             In my experience in CSS thus far, I have used the "display" property very, very often. I am sur emost of you have as well.  However, despite how much I use it, I realized that I never had a clear understanding of what each of the three manin values for this property affected the layout of my web pages.  If one didn't produce the desired layout change, I would simply try one of the others.  If you are like me, hopefully this will help better your understanding so you can save time by picking the right display value the first time, every time.
+            </p>
+            <p>
             When it comes to block, inline, and inline-block, the main differences are in how the width and height are set, whether or not you can change the width and height, and if it can have neighbors (only one of them can't)
             We'll start with block.  you write it like so:
-                display: block;
-            What you need to know about blocks:
-                1. width is is set by its parent and its height set by its content.
-                2. You CAN change the widths and heights.
-                3. This DOES NOT ALLOW horizontal neighbors--This means if you use a block, the content inside that block will be the only content on that line.
-
+            </p>
+                display: block; <br>
+            What you need to know about blocks:<br>
+                1. width is is set by its parent and its height set by its content.<br>
+                2. You CAN change the widths and heights.<br>
+                3. This DOES NOT ALLOW horizontal neighbors--This means if you use a block, the content inside that block will be the only content on that line.<br>
+            <p>
             Next up, inline.  Written as:
-            display: inline;
-            What you need to know about inline:
-                1. An element set to Inline will have its width and height determined by its content.
-                2. You cannot change the height and width. It will simply be the size of the content you put in.
-
+            display: inline; <br>
+            What you need to know about inline: <br>
+                1. An element set to Inline will have its width and height determined by its content.<br>
+                2. You cannot change the height and width. It will simply be the size of the content you put in.<br>
+            </p>
+            <p>
             Last, inline-block. Written as:
-              display: inline-block;
-            What you need to know about inline-block:
-                1. It's the same as block
-                **EXCEPT**
-                2. Width is determined by its content.
-                3. BUT, you CAN set its width and height.
+              display: inline-block;<br>
+            What you need to know about inline-block:<br>
+                1. It's the same as block<br>
+                **EXCEPT**<br>
+                2. Width is determined by its content.<br>
+                3. BUT, you CAN set its width and height.<br>
+            </p>
     </p>
       </section>
     </div>
@@ -118,31 +123,3 @@
 </section
 </body>
 
-What does it mean to display inline vs inline blocks?
-
-In my experience in CSS thus far, I have used the "display" property very, very often. I am sur emost of you have as well.  However, despite how much I use it, I realized that I never had a clear understanding of what each of the three manin values for this property affected the layout of my web pages.  If one didn't produce the desired layout change, I would simply try one of the others.  If you are like me, hopefully this will help better your understanding so you can save time by picking the right display value the first time, every time.
-When it comes to block, inline, and inline-block, the main differences are in how the width and height are set, whether or not you can change the width and height, and if it can have neighbors (only one of them can't)
-We'll start with block.  you write it like so:
-    display: block;
-What you need to know about blocks:
-    1. width is is set by its parent and its height set by its content.
-    2. You CAN change the widths and heights.
-    3. This DOES NOT ALLOW horizontal neighbors--This means if you use a block, the content inside that block will be the only content on that line.
-
-Next up, inline.  Written as:
-    display: inline;
-What you need to know about inline:
-    1. An element set to Inline will have its width and height determined by its content.
-    2. You cannot change the height and width. It will simply be the size of the content you put in.
-
-Last, inline-block. Written as:
-    display: inline-block;
-What you need to know about inline-block:
-    1. It's the same as block
-      **EXCEPT**
-      2. Width is determined by its content.
-      3. BUT, you CAN set its width and height.
-
-What are the best practices associated with using classes vs. ids?
-
-In terms of ID's vs classes, you want to use an ID only once on one element while one class can be used for multiple elements and one element may have multiple classes.
