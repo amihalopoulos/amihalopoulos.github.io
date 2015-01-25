@@ -7,8 +7,9 @@ body {
   display: inline;
 }
 
-#media {
-  float: right;
+ul {
+  position: fixed;
+  margin-top: 0;
 }
 
 #jumbotron {
