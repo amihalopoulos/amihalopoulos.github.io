@@ -88,7 +88,7 @@ a:hover {
   margin-left: 15px;
 }
 
-#blog_header {
+.blog_header {
   background-color: gray;
   text-align: center;
 }
