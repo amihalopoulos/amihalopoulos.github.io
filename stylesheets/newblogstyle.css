@@ -3,6 +3,14 @@ body {
 
 }
 
+#info li {
+  display: inline;
+}
+
+#media {
+  float: right;
+}
+
 #jumbotron {
   background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
   background-position: 0px -200px;
