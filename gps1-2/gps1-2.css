@@ -1,0 +1,17 @@
+/* include your css here */
+#header {
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+        }
+#wrapper {
+        }
+
+#column1, #column2, #column3 {
+  display: inline-block;
+  width: 30%;
+        }
+
+#column2 {
+  padding: 0 3% 0 3%;
+        }
