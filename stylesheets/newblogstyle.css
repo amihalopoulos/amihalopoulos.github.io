@@ -7,10 +7,10 @@ body {
   display: inline;
 }
 
-ul {
+/* ul {
   position: fixed;
   margin-top: 0;
-}
+} */
 
 #jumbotron {
   background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
