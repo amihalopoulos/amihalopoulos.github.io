@@ -52,8 +52,8 @@
       <li><a href="#thinking_blog">Thinking Blog</a></li>
       <li><a href="#blog5">Ruby Enumerable Method</a></li>
       <li><a href="#blog6">Problems Facing Tech</a></li>
-      <!--<li><a href="#blog7">blog post 7</a></li>
-      <li><a href="#blog8">blog post 8</a></li>
+      <li><a href="#blog7">Classes</a></li>
+      <!--<li><a href="#blog8">blog post 8</a></li>
       <li><a href="#blog9">blog post 9</a></li>
       <li><a href="#blog10">blog post 10</a></li>
       <li><a href="#blog11">blog post 11</a></li>
@@ -67,6 +67,53 @@
   </div>
 
   <div id="blog_posts_wrapper">
+     <div class="blog_template" id="blog8">
+      <div class="blog_header">
+        <h1>Blog #8</h1>
+        <h2>Pairing & Feedback @ DBC </h2>
+        <h4>Sunday Feb 15, 2015</h4>
+      </div>
+
+      <section>
+        <p>
+This blog post will focus on my experience thus far with pair programming during Phase 0 of DBC.  So far in my career as a student at DBC, I've had the opportunity to pair program at least 10 times. So I've had the chance to solve problems with 10 different people of all different experiences and personalities, and get feedback from each one of them.
+</p>
+<p>
+Solving challenges via pair programming can be a little bit tricky. I consider myself a good problem solver and I have a method of breaking problems down in order to solve them.  After doing this, I like to visualize each step I will take to solve said problem.  This process may not be the most time-effective, but it allows me to prepare myself for any unintended challenges that may arise throughout the process.  Understandably, other people have their own ways of solving problems as well.  Often, I find my pair trying to jump into the problem before I am mentally ready. This can get a little frustrating for both of us, so I like to discuss our problem-solving preferances before we get into the challenge at hand.  However, when I have clear, open, and flowing conversation with a pair, it is VERY fun to run through a problem and finish in a half hour and say "That's it?" That has only happened twice, but it's a great feeling.
+</p>
+<p>
+After each pairing session, DBC requires us to leave feedback for the person we paired with.  Reading what people thought of working with me was a very eye-opeing experience.  It was neat because all of the reviews were pretty similar. Specifically, almost every person complimented my patience and solid communication. I'm not sure if everyone says that about everyone, but it was good to hear becuase those were two things that I was specifically working on.  For the future, I'm going to try to improve even further on these two things.  I am also going to focus on writing better feedback.  Telling it straight is actually the nicest thing you can do, because it allows people to improve on themselves.  That has been tough for me because I don't want to be rude sometimes.
+</p>
+      </section>
+     </div>
+    <div class="blog_template" id="blog7">
+      <div class="blog_header">
+        <h1>Blog #7</h1>
+        <h2>Classes</h2>
+        <h4>Friday Jan 16, 2015</h4>
+      </div>
+
+      <section>
+       So you probably know how to declare variables and even define your own methods. Well, now it is time to start storing some of that knowledge into your very own classes! Why would you want to make your own class, you ask? Well say you want to create a legion of minions in your program.  Each one has the abilities to cook, sing, clean, make jokes, etc.  Instead of writing new methods every single time you want to create a minion, you could write a class called minion. Each instance of this class will be represent each invidivual minion. Below I create a class Minion and make three new instances.
+<pre>
+<code>
+class Minion
+  def initialize (name, eyes)
+  @name = name
+  @eyes = eyes
+  end
+end
+
+kevin = Minion.new("Kevin", 2)
+steve = Minion.new("Steve", 1)
+</code>
+</pre>
+<p>
+One the first line, I named the new class Minion. Then I defined the initialize method. This method is very useful because it automatically runs everything inside it as soon as an instance of the class is created.  The method takes two arguments, name and number of eyes. It then assigns each of those arguments to an instance varaible.  You assign instance variables with the @ sign.  These variables will be available for every subsequent method in its individual instance of the class Minion and only that instance.  For example, the variable @eyes for kevin will not affect Steve ever, in any way. The two are completely separate.  On the last two lines I made an instance of Minion named kevin and one of steve.
+</p>
+      </section>
+     </div>
+
      <div class="blog_template" id="blog6">
       <div class="blog_header">
         <h1>Cultural Blog: Problems in the Tech Industry</h1>
