@@ -53,9 +53,9 @@
       <li><a href="#blog5">Ruby Enumerable Method</a></li>
       <li><a href="#blog6">Problems Facing Tech</a></li>
       <li><a href="#blog7">Classes</a></li>
-      <!--<li><a href="#blog8">blog post 8</a></li>
-      <li><a href="#blog9">blog post 9</a></li>
-      <li><a href="#blog10">blog post 10</a></li>
+      <li><a href="#blog8">Pairing & Feedback</a></li>
+      <li><a href="#blog9">Modules</a></li>
+      <!--<li><a href="#blog10">blog post 10</a></li>
       <li><a href="#blog11">blog post 11</a></li>
       <li><a href="#blog12">blog post 12</a></li>
       <li><a href="#blog13">blog post 13</a></li>
@@ -67,6 +67,44 @@
   </div>
 
   <div id="blog_posts_wrapper">
+    <div class="blog_template" id="blog9">
+  <div class="blog_header">
+    <h1>Blog #9</h1>
+    <h2>Classes & Modules</h2>
+    <h4>Sunday Feb 22, 2015</h4>
+  </div>
+<section>
+
+<p>
+When studying modules, the first thing you hear is that they are very similar to classes. This is true in the way they are written and that they both hold methods, but that’s about the extent of their similarities.  Although they can be used to do the same things at times, they should not be used interchangeably — there is a right and wrong construct to use.  Since I covered classes in last week’s post, refer back to that if you need a refresher.
+</p>
+<p>
+When thinking of modules, it’s safe to think of their purpose as providing a library of methods (usually across classes), while classes are used to make instances of itself (objects) with predefined methods and variables.  You cannot instantiate a module. One of the main benefits of a module is how it acts a collection of methods that can be used by many classes.If you ever have a class that you are not creating instances of, it should probably be a module.
+</p>
+<p>
+The second advantage of modules is namesapcing.  Since modules are often loaded into programs from other files, the possibility of two methods having the identical names but different characteristics is very high. Modules takes care of this by namespacing.  Without namespacing, it would be very confusing to know which of two identically names methods will be run by the program.  To namespace, you would write the name of the module, plus two colons, followed by the method/class from the module. Like so, ModuleName::Method.  This will explicitly refer to the method from that particular module if need be.
+</p>
+<p>
+  Here is how you would write a module and include that module in a class:
+</p>
+  <pre><code>
+module ThisIsAModule
+  def method_1
+    things
+  end
+end
+
+class ThisIsAClass
+  include ThisIsAModule
+
+  def method_2
+  end
+end
+
+</code></pre>
+
+</section>
+</div>
      <div class="blog_template" id="blog8">
       <div class="blog_header">
         <h1>Blog #8</h1>
