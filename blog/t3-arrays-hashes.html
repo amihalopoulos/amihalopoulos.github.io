@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alexander Mihalopoulos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <div id='top_row'>
+      <h1 class='name'>Alexander A. <img id='pic' src='../icons/alexei-prof-black.png'> Mihalopoulos</h1>
+  </div>
+  <div id="navbar">
+    <ul>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#about-me">About</a>
+      </li>
+      <li>
+        <a href="../pages/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="../blog/blog.html">Blog</a>
+      </li>
+  </div>
+<section>
+  <div id="blog_posts_wrapper">
+    <div class="blog_template" id="blog4">
+        <div class="blog_header">
+            <h1>Blog #4</h1>
+            <h2>Arrays and Hashes</h2>
+            <h4>Wednesday Jan 28, 2015</h4>
+        </div>
+        <section>
+            <p>Arrays</p>
+            <p>Think of an array as an empty bucket. Whenever you want it, you just pick it up and toss whatever you'd like in it. In Ruby, all you need to do is name the bucket and either leave it as empty for future use or name the bucket and say what you want to put it in it. You can put strings, numbers, more arrays, hashes, etc. Arrays can hold pretty much anyhting. You can create an empty array one of two ways:
+                <p> Method 1:
+                    <br> new_array = []
+                    <br> Method 2:
+                    <br> new_array = Array.new() </p>
+                <p>
+                    Similarly, you can add values to an array at the same time as you create it. Like so: </p>
+                <pre>
+                <code>
+                new_array = ["cat", "hat", "bat"]
+                </code>
+            </pre>
+                <p>To access an item in your array, you type the number where the item is located in the array in brackets after the array. Remember that arrays are numbered starting from 0. So in the above example, to access "cat" you would type:
+                    <br>
+                </p>
+                <pre> <code>
+                > new_array = ["cat","hat", "bat"]
+                => ["cat", "hat", "bat"]
+                > new_array[0]
+                => "cat"
+                > new_array[1]
+                => "hat"
+                > new_array[2]
+                => "bat"
+                > new_array[3]
+                => nil
+            </code></pre>
+
+                <p>
+                    Arrays come with their own set of methods from the class Array. In addition, you can add two arrays as well as subtract them. Adding arrays will put all the values of the two arrays into one array. Subtracting one array from a second array will return all the items of the first array that were not in the second array. Lastly, you can find all common items of two arrays by joining them with an ampersand (&) likes so:
+                    <br> >[1,2,3]&[2,3,4]
+                    <br> => [2,3]
+                </p>
+                <p>Arrays have many more methods that come with their class. Check them out.</p>
+                <p>Hashes</p>
+                <p>
+                    Hashes are very similar to arrays in that they both store data. The main difference is that hashes store their data through the use of "keys" and "values" while arrays store their data by using indices. So all data in a hash is a value and every value has a key. Making a hash is similar to making a new array. Only difference is the use of squiggly brackets {} instead of square [] that are used for arrays: </p>
+                <pre><code>
+                > new_hash = Hash.new
+                => {}
+                > new_hash = {}
+                => {}
+                </code></pre>
+                <p>To match a value to a key when creating a new hash, you use the hash rocket (=>) like so:
+                </p>
+                <pre><code>
+                favorite_athletes = {"football" => "Tom Brady", "basketball" => "Michael Jordan", "baseball" => "Derek Jeter"}
+                </code></pre>
+                <p>
+                    Hashes are good to use when you have more data or data within data that you need to store.
+                </p>
+            </p>
+            </p>
+        </section>
+    </div>
+    </div>
+    <div id='footer'>
+    <div id="info">
+        <a href="https://twitter.com/lextheboywonder" target="_blank" class='media'><img src="../icons/twitter (1).png">
+        </a>
+        <a href="https://github.com/amihalopoulos" target="_blank" class='media'><img src="../icons/github_alt.png">
+        </a>
+        <a href="http://www.google.com/+AlexanderMihalopoulos" target='_blank' class='media'><img src='../icons/google_plus.png'>
+        </a>
+        <a href="http://www.linkedin.com/pub/alexander-mihalopoulos/5b/12/3b7/" target='_blank' class='media'><img src='../icons/linkedin (1).png'>
+        </a>
+    </div>
+    <div id='contact'>
+      <p>C: 201-452-2492</p>
+      <p>Email: amihalop@gmail.com</p>
+    </div>
+  </div>
+</body>

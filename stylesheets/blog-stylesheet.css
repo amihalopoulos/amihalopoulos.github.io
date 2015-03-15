@@ -1,60 +1,144 @@
-#logo {
-  display: inline;
-  font-size: 32px;
+html {
+  background-image: url('../icons/dark-website-backgrounds-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Tahoma;
+}
+
+#top_row{
+  width: 100%;
+  border-bottom: 5px solid #FFFFFF;
+  margin: auto;
+  text-align: center;
+  top: 0;
+}
+.name, #pic {
+  margin: auto;
+  vertical-align: middle;
+}
+.name {
+  font-size: 5em;
+  color: #FFFFFF;
+}
+#pic {
+  height: 110px;
+  width: auto;
+  border-radius: 30%
+}
+#navbar {
+  text-align: center;
+  width: 95%;
+}
+#navbar ul {
+  list-style: none;
+  text-align: center;
+}
+#navbar li {
+  display: inline-block;
+  padding: 0px 50px;
+  font-size: 20px;
+  margin: -4px;
+}
+#info {
+  padding-top: 10px;
+}
+#footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  border-top: 3px solid #FFFFFF;
+  margin-top: 2%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: black;
+}
+.media img {
+  height: 25px;
+  width: auto;
+  margin: auto;
+}
+#contact {
+  line-height: 5px;
+}
+a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover {
+  opacity: .5;
+  padding: 5px 0;
+}
+#project_wrapper {
+  text-align: center;
+  color: #A8A8A8 ;
+}
+#left, #right {
+  height: 300px;
+  width: 32%;
+  display: inline-block;
+  border-radius: 20%;
+  opacity: .7;
+}
+#right {
+  background: white;
+  vertical-align: top;
+  color: #000000;
+}
+#left {
+  background-image: url('../5-design-cc-mission-solo-challenge/dogimg.jpg');
+  background-size: cover;
+  background-color: #FFFFFF;
+}
+/*.arrow {
+  width: 100px;
+  height: 75px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  border-radius: 20%;
+}*/
+p a {
+  color: blue;
+  text-decoration: underline;
+}
+.list_box {
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+  height: 390px;
+  background-color: #FFFFFF;
+  opacity: .6;
+  border-radius: 20%;
+}
+.list_box a {
   color: blue;
 }
-
-#summary {
-  font-size: 12px;
-  display: inline-block;
+.list_box ul {
+  list-style: none;
 }
-
-#navbar {
-
-  background-color: blue;
-  height: 50px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-span {
-  background-color: white;
-  margin-left: 20px;
-  padding: 8px 15px;
-  border: 5px solid black;
-  border-radius: 20%;
-  line-height: 50px;
-  }
-
-a {
-  text-decoration: none;
-  color: orange;
-}
-
-.content {
-
-  margin-top: 10px;
-  width:100%;
-
-}
-
-#list_box {
-  border: 2px solid black;
-  float: left;
-  width: 30%;
-  margin-left: 50px;
-}
-
 #blog_posts_wrapper {
-  border: 2px solid black;
+  text-align: center;
+}
+.blog_template {
+  background-color: #FFFFFF;
+  width: 75%;
   display: inline-block;
-  height: 600px;
-  width: 55%;
-  overflow: scroll;
+  opacity: .6;
+  border-radius: 25px;
 }
-
-#blog_header {
-  background-color: gray;
-
+#home_quote {
+  width: 100%;
+  background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: 0 auto;
+  opacity: .4;
+  text-align: center;
+  border-radius: 10px;
 }
-
+#home_quote h1{
+  opacity: 1;
+  color: #FFFFFF;
+}

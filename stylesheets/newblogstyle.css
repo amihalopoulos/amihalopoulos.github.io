@@ -1,6 +1,6 @@
 body {
-  background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCR-96-zIF7HD72_RQEhzOQh30_33D3N_vjwe8YKmTy2fFjpdldg');
-
+  background-image: url('../icons/dark-website-backgrounds-3.jpg');
+  background-size: cover;
 }
 
 #info li {
@@ -14,19 +14,20 @@ body {
 
 #jumbotron {
   background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
-  opacity: .5;
   background-position: 0px -200px;
-  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
   color: white;
   clear:right;
+  opacity: .5;
+  position: relative;
 }
 
 #title {
   padding-top: 120px;
   text-align: center;
-  position: relative;
+  position: absolute;
 }
 
 #title h1 {
@@ -64,7 +65,7 @@ body {
 }
 
 a {
-  color: #333333;
+  color: #FFFFFF;
   font-size: 20px;
   text-decoration: none;
 }
@@ -166,3 +167,8 @@ a:hover {
   text-align: center;
 }
 
+.blog_template {
+  font-size: 20px;
+  font-family: "Tahoma";
+  font-weight: 2em;
+}

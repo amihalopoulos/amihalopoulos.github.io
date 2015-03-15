@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alexander Mihalopoulos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <div id='top_row'>
+      <h1 class='name'>Alexander A. <img id='pic' src='../icons/alexei-prof-black.png'> Mihalopoulos</h1>
+  </div>
+  <div id="navbar">
+    <ul>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#about-me">About</a>
+      </li>
+      <li>
+        <a href="../pages/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="../blog/blog.html">Blog</a>
+      </li>
+  </div>
+<section>
+  <div id="blog_posts_wrapper">
+<div class="blog_template" id="blog3">
+        <div class="blog_header">
+            <h1>Blog #3</h1>
+            <h2>The Big 3 Display Property Values: Block, Inline, & Inline-block</h2>
+            <h4>Friday Jan 24, 2015</h4>
+        </div>
+        <section>
+            <p>What does it mean to display inline vs inline blocks?</p>
+            <p>
+                In my experience in CSS thus far, I have used the "display" property very, very often. I am sur emost of you have as well. However, despite how much I use it, I realized that I never had a clear understanding of what each of the three manin values for this property affected the layout of my web pages. If one didn't produce the desired layout change, I would simply try one of the others. If you are like me, hopefully this will help better your understanding so you can save time by picking the right display value the first time, every time.
+            </p>
+            <p>
+                When it comes to block, inline, and inline-block, the main differences are in how the width and height are set, whether or not you can change the width and height, and if it can have neighbors (only one of them can't) We'll start with block. you write it like so:
+            </p>
+            display: block;
+            <br> What you need to know about blocks:
+            <br> 1. width is is set by its parent and its height set by its content.
+            <br> 2. You CAN change the widths and heights.
+            <br> 3. This DOES NOT ALLOW horizontal neighbors--This means if you use a block, the content inside that block will be the only content on that line.
+            <br>
+            <p>
+                Next up, inline. Written as: display: inline;
+                <br> What you need to know about inline:
+                <br> 1. An element set to Inline will have its width and height determined by its content.
+                <br> 2. You cannot change the height and width. It will simply be the size of the content you put in.
+                <br>
+            </p>
+            <p>
+                Last, inline-block. Written as: display: inline-block;
+                <br> What you need to know about inline-block:
+                <br> 1. It's the same as block
+                <br> **EXCEPT**
+                <br> 2. Width is determined by its content.
+                <br> 3. BUT, you CAN set its width and height.
+                <br>
+            </p>
+            </p>
+        </section>
+    </div>
+    </div>
+<div id='footer'>
+    <div id="info">
+        <a href="https://twitter.com/lextheboywonder" target="_blank" class='media'><img src="../icons/twitter (1).png">
+        </a>
+        <a href="https://github.com/amihalopoulos" target="_blank" class='media'><img src="../icons/github_alt.png">
+        </a>
+        <a href="http://www.google.com/+AlexanderMihalopoulos" target='_blank' class='media'><img src='../icons/google_plus.png'>
+        </a>
+        <a href="http://www.linkedin.com/pub/alexander-mihalopoulos/5b/12/3b7/" target='_blank' class='media'><img src='../icons/linkedin (1).png'>
+        </a>
+    </div>
+    <div id='contact'>
+      <p>C: 201-452-2492</p>
+      <p>Email: amihalop@gmail.com</p>
+    </div>
+  </div>
+</body>

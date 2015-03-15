@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alexander Mihalopoulos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <div id='top_row'>
+      <h1 class='name'>Alexander A. <img id='pic' src='../icons/alexei-prof-black.png'> Mihalopoulos</h1>
+  </div>
+  <div id="navbar">
+    <ul>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#about-me">About</a>
+      </li>
+      <li>
+        <a href="../pages/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="../blog/blog.html">Blog</a>
+      </li>
+  </div>
+<section>
+  <div id="blog_posts_wrapper">
+    <div class="blog_template" id="blog7">
+        <div class="blog_header">
+            <h1>Blog #7</h1>
+            <h2>Classes</h2>
+            <h4>Friday Jan 16, 2015</h4>
+        </div>
+
+        <section>
+            So you probably know how to declare variables and even define your own methods. Well, now it is time to start storing some of that knowledge into your very own classes! Why would you want to make your own class, you ask? Well say you want to create a legion of minions in your program. Each one has the abilities to cook, sing, clean, make jokes, etc. Instead of writing new methods every single time you want to create a minion, you could write a class called minion. Each instance of this class will be represent each invidivual minion. Below I create a class Minion and make three new instances.
+            <pre>
+<code>
+class Minion
+  def initialize (name, eyes)
+  @name = name
+  @eyes = eyes
+  end
+end
+
+kevin = Minion.new("Kevin", 2)
+steve = Minion.new("Steve", 1)
+</code>
+</pre>
+            <p>
+                One the first line, I named the new class Minion. Then I defined the initialize method. This method is very useful because it automatically runs everything inside it as soon as an instance of the class is created. The method takes two arguments, name and number of eyes. It then assigns each of those arguments to an instance varaible. You assign instance variables with the @ sign. These variables will be available for every subsequent method in its individual instance of the class Minion and only that instance. For example, the variable @eyes for kevin will not affect Steve ever, in any way. The two are completely separate. On the last two lines I made an instance of Minion named kevin and one of steve.
+            </p>
+        </section>
+    </div>
+    </div>
+    <div id='footer'>
+    <div id="info">
+        <a href="https://twitter.com/lextheboywonder" target="_blank" class='media'><img src="../icons/twitter (1).png">
+        </a>
+        <a href="https://github.com/amihalopoulos" target="_blank" class='media'><img src="../icons/github_alt.png">
+        </a>
+        <a href="http://www.google.com/+AlexanderMihalopoulos" target='_blank' class='media'><img src='../icons/google_plus.png'>
+        </a>
+        <a href="http://www.linkedin.com/pub/alexander-mihalopoulos/5b/12/3b7/" target='_blank' class='media'><img src='../icons/linkedin (1).png'>
+        </a>
+    </div>
+    <div id='contact'>
+      <p>C: 201-452-2492</p>
+      <p>Email: amihalop@gmail.com</p>
+    </div>
+  </div>
+</body>
