@@ -157,7 +157,6 @@ h1 span {
     clear: left;
     z-index: 10;
     overflow:auto;
-    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -171,7 +170,7 @@ h1 span {
     background:#ccc;
     vertical-align: top;
     display: inline-block;
-    *display: inline;
+    display: inline;
     margin: 2%;
     zoom: 1
 }
