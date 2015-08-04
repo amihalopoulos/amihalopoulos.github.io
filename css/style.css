@@ -226,6 +226,7 @@ a:hover .text {
     height: 100px;
     background: #0099CC;
     bottom: 0;
+    top: 80px;
     text-align: center;
 }
 
