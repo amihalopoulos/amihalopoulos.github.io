@@ -64,6 +64,7 @@ h1 span {
 .content-inner {
     margin: 0 1% 1% 21%;
     padding-bottom: 2%;
+    padding-left: 1%;
     background-color:rgba(0,0,150,0.1);
     border-radius: 10px;
 }
@@ -225,6 +226,7 @@ a:hover .text {
     height: 100px;
     background: #0099CC;
     bottom: 0;
+    text-align: center;
 }
 
 @media(min-width:768px) {
