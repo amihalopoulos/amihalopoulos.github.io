@@ -35,7 +35,6 @@ h1 span {
     margin: -2% auto 0 auto ;
     border-radius: 10px;
     text-align: center;
-    background-color:rgba(0,0,50,0.1);
 }
 
 .header-inner p {
@@ -62,7 +61,12 @@ h1 span {
     transition: all 0.5s ease;
 }
 .sidebar.left { float: left; }
-.content-inner { margin-left: 20%; }
+.content-inner {
+    margin: 0 1% 1% 21%;
+    padding-bottom: 2%;
+    background-color:rgba(0,0,150,0.1);
+    border-radius: 10px;
+}
 
 .row {
     margin-right: 8%;
@@ -169,6 +173,10 @@ a:hover .text {
     display: inline;
     margin: 2%;
     zoom: 1
+}
+
+.videos {
+    text-align: center;
 }
 /* end of homepage thumbnails*/
 
