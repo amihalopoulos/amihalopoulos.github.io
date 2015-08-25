@@ -229,6 +229,13 @@ a:hover .text {
     top: 80px;
     text-align: center;
 }
+.audio {
+    display: table;
+    margin: 0 auto;
+}
+audio {
+  width: 480px;
+}
 
 @media(min-width:768px) {
     #wrapper {
