@@ -10,6 +10,41 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(39.9522222, -75.1641667),
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+        var marker=new google.maps.Marker({
+          position: {lat: 39.953041, lng: -75.203261}
+        });
+        var marker2=new google.maps.Marker({
+          position: {lat: 39.967911, lng: -75.154804}
+        });
+        var marker3=new google.maps.Marker({
+          position: {lat: 39.9287441, lng: -75.229858}
+        });
+
+        marker.setMap(map);
+        marker2.setMap(map);
+        marker3.setMap(map);
+
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <title>Oral Care for Infants</title>
 </head>
 
@@ -62,6 +97,7 @@
         <div class="content-inner">
             <div class="row">
                 <h2>Phildalephia Dental Reference List</h2>
+                 <div id="map"></div>
                 <h3><a href="http://www.dental.upenn.edu/patient_care/">Upenn School of Dental Medicine</a></h3>
                 <ul>
                     <li><strong>Address:</strong> 240 South 40th Street, Philadelphia, PA,19104 </li>
@@ -79,7 +115,7 @@
                 </ul>
                 <h3><a href="http://www.fpcn.com/">The Health Annex</a></h3>
                 <ul>
-                    <li><strong>Address:</strong> 6120-B Woodland Ave. 2nd Philadelphia PA 6993
+                    <li><strong>Address:</strong> 6120-B Woodland Ave. Floor 2 Philadelphia PA 6993
                     </li>
                     <li><strong>Phone:</strong> 215-727-4721 </li>
                     <li><strong>Accepts:</strong> Uninsured, Underinsured</li>
