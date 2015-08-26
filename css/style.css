@@ -205,6 +205,10 @@ a:hover .text {
     display: block;
 }
 
+#map {
+    margin: 0 auto;
+}
+
 .boxes {
     height: 400px;
     width: auto;
@@ -226,7 +230,7 @@ a:hover .text {
     height: 100px;
     background: #0099CC;
     bottom: 0;
-    top: 80px;
+    top: 20px;
     text-align: center;
 }
 .audio {
