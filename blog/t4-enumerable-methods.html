@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alexander Mihalopoulos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <div id='top_row'>
+      <h1 class='name'>Alexander A. <img id='pic' src='../icons/alexei-prof-black.png'> Mihalopoulos</h1>
+  </div>
+  <div id="navbar">
+    <ul>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#about-me">About</a>
+      </li>
+      <li>
+        <a href="../pages/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="../blog/blog.html">Blog</a>
+      </li>
+  </div>
+<section>
+  <div id="blog_posts_wrapper">
+    <div class="blog_template" id="blog5">
+        <div class="blog_header">
+            <h1>Ruby Enumerables</h1>
+            <h2>Enumerable#cycle</h2>
+            <h4>Tuesday Feb 3, 2015</h4>
+        </div>
+
+        <section>
+            <p>
+                After doing a lot of digging through Google, I learned about the Enumerable#cycle method and it’s pretty [bleeping] cool. To start, I’ll walk you through the basic stuff and once we get that down, I’ll show you how the fun tricks with it.
+                <br> At its core, the #cycle method runs a block either n times or, if you don’t specify, forever. You set it up like this:
+            </p>
+            <pre>
+      <code>
+      >> shopping_list = ["apples", "bananas", "grapes"]
+      => ["apples", "bananas", "grapes"]
+      >> shopping_list.cycle {|x| puts x}
+      apples
+      bananas
+      grapes
+      apples
+      bananas
+      grapes
+      apples
+      bananas
+      grapes
+      apples
+      bananas
+      grapes
+      [... and on and on and on. This is where I hit control + c]
+      </code>
+    </pre>
+            <p>
+                Pretty simple. Now lets add our number to break it after that many cycles.
+            </p>
+            <pre>
+    <code>
+   >> shopping_list. cycle(2) {|x| puts x}
+  apples
+  bananas
+  grapes
+  apples
+  bananas
+  grapes
+  => nil
+    </code>
+    </pre>
+            <p>
+                Now, to get a little fancier, you can write the break inside of the block:
+            </p>
+            <pre>
+<code>
+>> shopping_list.cycle do |x|
+>> puts x
+>> break if x == "grapes"
+>> end
+apples
+bananas
+grapes
+=> nil
+</code>
+</pre>
+            <p>
+                Not amused? Well maybe this will get ya going: If you set a variable equal to the result of running #cycle on an Enumerable, then that object can have #next called on it to return the next item in the sequence. Let me clarify with an example:
+            </p>
+            <pre>
+<code>
+>> food_items = shopping_list.cycle
+=> #<Enumerator: ["apples", "bananas", "grapes"]:cycle>
+>> food_items.next
+=> "apples"
+>> food_items.next
+=> "bananas"
+>> food_items.next
+=> "grapes"
+>> food_items.next
+=> "apples"
+</code>
+</pre>
+            <p>
+                Is that cool enough for you?! You can even call #rewind on the object and have it start again from the beginning of the cycle! Watch it in action (the following code continues from where the previous code left off) :
+            </p>
+            <pre>
+<code>
+>> food_items.next
+=> "apples"
+>> food_items.next
+=> "bananas"
+>> food_items.rewind
+=> #<Enumerator: ["apples", "bananas", "grapes"]:cycle>
+>> food_items.next
+=> "apples"
+</code>
+</pre>
+
+            <p> Disclaimer: There may still be more to learn about htis method. This is what I could find from in-depth google search that did not return too much information. I will update with my future findings. Until then, Happy Coding!
+            </p>
+        </section>
+    </div>
+    </div>
+    <div id='footer'>
+    <div id="info">
+        <a href="https://twitter.com/lextheboywonder" target="_blank" class='media'><img src="../icons/twitter (1).png">
+        </a>
+        <a href="https://github.com/amihalopoulos" target="_blank" class='media'><img src="../icons/github_alt.png">
+        </a>
+        <a href="http://www.google.com/+AlexanderMihalopoulos" target='_blank' class='media'><img src='../icons/google_plus.png'>
+        </a>
+        <a href="http://www.linkedin.com/pub/alexander-mihalopoulos/5b/12/3b7/" target='_blank' class='media'><img src='../icons/linkedin (1).png'>
+        </a>
+    </div>
+    <div id='contact'>
+      <p>C: 201-452-2492</p>
+      <p>Email: amihalop@gmail.com</p>
+    </div>
+  </div>
+</body>

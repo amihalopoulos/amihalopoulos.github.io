@@ -1,0 +1,448 @@
+/*html {
+  background-image: url('../icons/dark-website-backgrounds-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Tahoma;
+}
+
+#top_row{
+  width: 100%;
+  border-bottom: 5px solid #FFFFFF;
+  margin: auto;
+  text-align: center;
+  top: 0;
+}
+.name, #pic {
+  margin: auto;
+  vertical-align: middle;
+}
+.name {
+  font-size: 5em;
+  color: #FFFFFF;
+}
+#pic {
+  height: 400px;
+  width: auto;
+  border-radius: 30%
+}
+#navbar {
+  text-align: center;
+  width: 95%;
+}
+#navbar ul {
+  list-style: none;
+  text-align: center;
+}
+#navbar li {
+  display: inline-block;
+  padding: 0px 50px;
+  font-size: 20px;
+  margin: -4px;
+}
+#info {
+  padding-top: 10px;
+}
+#footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  border-top: 3px solid #FFFFFF;
+  margin-top: 2%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: black;
+}
+.media img {
+  height: 25px;
+  width: auto;
+  margin: auto;
+}
+#contact {
+  line-height: 5px;
+}
+a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover {
+  opacity: .5;
+  padding: 5px 0;
+}
+#project_wrapper {
+  text-align: center;
+  color: #A8A8A8 ;
+}
+#left, #right {
+  height: 300px;
+  width: 32%;
+  display: inline-block;
+  border-radius: 20%;
+  opacity: .7;
+}
+#right {
+  background: white;
+  vertical-align: top;
+  color: #000000;
+}
+#left {
+  background-image: url('../5-design-cc-mission-solo-challenge/dogimg.jpg');
+  background-size: cover;
+  background-color: #FFFFFF;
+}
+/*.arrow {
+  width: 100px;
+  height: 75px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  border-radius: 20%;
+}*/
+/*
+p a {
+  color: blue;
+  text-decoration: underline;
+}
+.list_box {
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+  height: 390px;
+  background-color: #FFFFFF;
+  opacity: .6;
+  border-radius: 20%;
+}
+.list_box a {
+  color: blue;
+}
+.list_box ul {
+  list-style: none;
+}
+#blog_posts_wrapper {
+  text-align: center;
+}
+.blog_template {
+  background-color: #FFFFFF;
+  width: 75%;
+  display: inline-block;
+  opacity: .6;
+  border-radius: 25px;
+}
+#home_quote {
+  width: 100%;
+  background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: 0 auto;
+  opacity: .4;
+  text-align: center;
+  border-radius: 10px;
+}
+#home_quote h1{
+  opacity: 1;
+  color: #FFFFFF;
+}*/
+
+
+html,
+body {
+  text-shadow: 0 0 3px #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+body {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.media img {
+  height: 25px;
+  width: auto;
+  margin: auto;
+}
+
+.media {
+  height: 25px;
+  width: auto;
+}
+
+a {
+  color: #3366CC;
+  text-decoration: none;
+}
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+h1 {
+
+}
+
+h5 {
+  padding: 0;
+  margin: 0;
+
+}
+
+.hidden {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 48%;
+  font-weight: bold;
+}
+
+.list {
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/*a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked*/
+
+
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../icons/boat.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+#about {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}

@@ -1,0 +1,174 @@
+body {
+  background-image: url('../icons/dark-website-backgrounds-3.jpg');
+  background-size: cover;
+}
+
+#info li {
+  display: inline;
+}
+
+/* ul {
+  position: fixed;
+  margin-top: 0;
+} */
+
+#jumbotron {
+  background-image: url('http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/new-york-central-park-top-hd-wide-wallpapers-for-background.jpg');
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  clear:right;
+  opacity: .5;
+  position: relative;
+}
+
+#title {
+  padding-top: 120px;
+  text-align: center;
+  position: absolute;
+}
+
+#title h1 {
+  font-size: 48px;
+  font-family: 'Chewy', cursive;
+}
+
+#title h4 {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+#navbar {
+  height: 50px;
+  left: 0;
+  right: 0;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 0px 50px;
+  font-size: 20px;
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+  margin: -4px;
+}
+
+a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  font-size: 110%;
+  padding: 5px 10px;
+}
+
+#pic, #about-me, #twitterbox {
+  display: inline-block;
+}
+
+#pic{
+  width: 20%;
+  height: 500px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  float: left;
+}
+#pic img {
+  width: 200px;
+  height: auto;
+  boder: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+}
+#about-me {
+  margin: 0 2%;
+  width: 55%;
+  height:500px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+#twitterbox {
+  width: 20%;
+  height: 500px;
+  margin-right: 10px;
+  float: right;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+.twitter-timeline {
+  height: 450px;
+}
+#twitterbox h3 {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 8px 3px;
+}
+
+#projects {
+  margin: 10px 0;
+  width: 100%;
+  height:500px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+
+#contact {
+  margin: 10px 0;
+  width: 100%;
+  height:200px;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+
+/* Below this is for the blog styling */
+.content {
+
+  margin-top: 10px;
+  width:100%;
+
+}
+
+#list_box {
+  border: 2px solid black;
+  float: left;
+  width: 30%;
+
+}
+
+#blog_posts_wrapper {
+  border: 2px solid black;
+  display: inline-block;
+  height: 600px;
+  width: 67%;
+  overflow: scroll;
+  margin-left: 1%;
+}
+
+.blog_header {
+  background-color: gray;
+  text-align: center;
+}
+
+.blog_template {
+  font-size: 20px;
+  font-family: "Tahoma";
+  font-weight: 2em;
+}

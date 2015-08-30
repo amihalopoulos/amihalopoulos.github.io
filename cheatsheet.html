@@ -1,0 +1,580 @@
+<!DOCTYPE HTML>
+<html>
+
+<head lang="en-us">
+    <meta charset="UTF-8">
+    <title>Ruby Cheatsheet</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/cheatsheet_stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,300italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <nav>
+        <div id="title"> Ruby Cheatsheet</div>
+    </nav>
+    <div id="wrapper">
+      <div class= "topic">
+        <h2>General Resources</h2>
+        <table>
+          <tr>
+            <th>Website</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="www.stackoverflow.com">StackOverflow</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="www.ruby-doc.org">Ruby-Docs</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="www.typing.io">Typing Practice</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/bbatsov/ruby-style-guide">Ruby Style Guide</a></td>
+            <td></td>
+          </tr>
+
+      </div>
+        <div class="topic">
+            <h2>Numbers</h2>
+            <p>
+                Numbers are what you would expect them to be, normal numbers that you use to perform basic math operations.
+            </p>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th class="concept">Concept</th>
+                        <th class="usage">Usage</th>
+                        <th class="example">Examples</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>normal Number</td>
+                        <td><code><strong>number_of_your_choice</strong></code>
+                        </td>
+                        <td>
+                            <p><code><strong>0</strong></code>
+                            </p>
+
+                            <p><code><strong>-11</strong></code>
+                            </p>
+
+                            <p><code><strong>42</strong></code>
+                            </p>
+                        </td>
+                        <td>
+                            Numbers are natural for Ruby, you just have to enter them!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Decimals</td>
+                        <td><code><strong>main.decimal</strong></code>
+                        </td>
+                        <td>
+                            <p><code><strong>3.2</strong></code>
+                            </p>
+
+                            <p><code><strong>-5.0</strong></code>
+                            </p>
+                        </td>
+                        <td>
+                            You can achieve decimal numbers in Ruby simply by adding a point.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Basic Math</td>
+                        <td>
+                            <code>n <strong>operator</strong> <em>m</em></code>
+                        </td>
+                        <td>
+                            <p><code>2 <strong>+</strong> <em>3</em> # =&gt; 5</code>
+                            </p>
+
+                            <p><code>5 <strong>-</strong> <em>7</em> # =&gt; -2</code>
+                            </p>
+
+                            <p><code>8 <strong>*</strong> <em>7</em> # =&gt; 56</code>
+                            </p>
+
+                            <p><code>84 <strong>/</strong> <em>4</em> # =&gt; 21</code>
+                            </p>
+                        </td>
+                        <td>
+                            In Ruby you can easily use basic math operations. In that sense you may use Ruby as a super-powered calculator.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comparison</td>
+                        <td>
+                            <code>n <strong>operator</strong> <em>m</em></code>
+                        </td>
+                        <td>
+                            <p><code>12 <strong>&gt;</strong> <em>3</em> # =&gt; true</code>
+                            </p>
+
+                            <p><code>12 <strong>&lt;</strong> <em>3</em> # =&gt; false</code>
+                            </p>
+
+                            <p><code>7 <strong>&gt;=</strong> <em>7</em> # =&gt; true</code>
+                            </p>
+                        </td>
+                        <td>
+                            <p>Numbers may be compared to determine if a number is bigger or smaller than another number. When you have the age of a person saved in the
+                                <code>age</code> variable you can see if that person is considered an adult in Germany:</p>
+
+                            <p><code>age &gt;= 18 # true or false</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="topic">
+            <h2>Strings</h2>
+            <p>Strings are used to hold textual information. They may contain single characters, words, sentences or a whole book.</p>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th class="concept">Concept</th>
+                        <th class="usage">Usage</th>
+                        <th class="example">Examples</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>Create</td>
+                        <td>
+                            <p><code><strong>'</strong>A string<strong>'</strong></code>
+                            </p>
+                        </td>
+                        <td>
+                            <p><code><strong>'</strong>Hello World<strong>'</strong></code>
+                            </p>
+
+                            <p><code><strong>'</strong>a<strong>'</strong></code>
+                            </p>
+
+                            <p><code>
+        <strong>'</strong>Just characters 129 _!$%^<strong>'</strong>
+      </code>
+                            </p>
+
+                            <p><code><strong>''</strong></code>
+                            </p>
+                        </td>
+                        <td>
+                            A string is created by putting quotation marks around a character sequence. A <a href="https://github.com/bbatsov/ruby-style-guide/">Ruby style guide</a> recommends using single quotes for simple strings.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interpolation</td>
+                        <td>
+                            <p><code><strong>"</strong>A string and an #{expression}<strong>"</strong></code>
+                            </p>
+                        </td>
+                        <td>
+                            <p><code><strong>"</strong>Email: #{user.email}<strong>"</strong></code>
+                            </p>
+
+                            <p><code><strong>"</strong>The total is #{2 + 2}<strong>"</strong></code>
+                            </p>
+
+                            <p><code><strong>"</strong>A simple string<strong>"</strong></code>
+                            </p>
+                        </td>
+                        <td>
+                            You can combine a string with a variable or Ruby expression using double quotation marks. This is called "interpolation." It is okay to use double quotation marks around a simple string, too.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Length</td>
+                        <td><code>string<strong>.length</strong></code>
+                        </td>
+                        <td>
+                            <p><code>"Hello"<strong>.length</strong> # =&gt; 5</code>
+                            </p>
+
+                            <p><code>""<strong>.length</strong> # =&gt; 0</code>
+                            </p>
+                        </td>
+                        <td>
+                            You can send a string a message, asking it how long it is and it will respond with the number of characters it consists of. You could use this to check if the desired password of a user exceeds the required minimum length. Notice how we add a comment to show the expected result.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Concatenate</td>
+                        <td><code>string <strong>+</strong> <em>string2</em></code>
+                        </td>
+                        <td>
+                            <pre><code>"Hello " <strong>+</strong> <em>"reader"</em>
+# =&gt; "Hello reader"</code></pre>
+                            <p><code>"a" <strong>+</strong> <em>"b"</em> <strong>+</strong>
+        <em>"c"</em>
+        # =&gt; "abc"</code>
+                            </p>
+                        </td>
+                        <td>Concatenates two or more strings together and returns the result.</td>
+                    </tr>
+                    <tr>
+                        <td>Substitute</td>
+                        <td>
+                            <pre><code>string<strong>.gsub</strong><em>(a_string,
+substitute)</em></code></pre>
+                        </td>
+                        <td>
+                            <pre><code>"Hae"<strong>.gsub</strong><em>("ae", "ä")
+# =&gt; "Hä"</em></code></pre>
+                            <pre><code>"Hae"<strong>.gsub</strong><em>("b", "ä")
+# =&gt; "Hae"</em></code></pre>
+                            <pre><code>"Greenie"<strong>.gsub</strong><em>("e", "u")
+# =&gt; "Gruuniu"</em></code></pre>
+                        </td>
+                        <td><em>gsub</em> stands for "globally substitute". It substitutes all occurrences of <code>a_string</code> within the string with
+                            <code>substitute</code>.</td>
+                    </tr>
+                    <tr>
+                        <td>Access</td>
+                        <td>
+                            <code>
+        string<strong>[</strong><em>position</em><strong>]</strong>
+      </code>
+                        </td>
+                        <td>
+                            <code>
+        "Hello"<strong>[</strong><em>1</em><strong>]</strong> # =&gt; "e"
+      </code>
+                        </td>
+                        <td>
+                            Access the character at the given position in the string. Be aware that the first position is actually position <em>0</em>.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="topic">
+            <h2>Arrays</h2>
+            <p>An array is an ordered collection of items which is indexed by numbers. So an array contains multiple objects that are mostly related to each other.
+                <p>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th class="concept">Concept</th>
+                                <th class="usage">Usage</th>
+                                <th class="example">Examples</th>
+                                <th class="description">Description</th>
+                            </tr>
+                            <tr>
+                                <td>Create</td>
+                                <td>
+                                    <code><strong>[</strong><em>contents</em><strong>]</strong></code>
+                                </td>
+                                <td>
+                                    <p><code><strong>[]</strong></code>
+                                    </p>
+
+                                    <p><code>
+        <strong>[</strong><em>"Rails", "fun", 5</em><strong>]</strong>
+      </code>
+                                    </p>
+                                </td>
+                                <td>Creates an Array, empty or with the specified contents.</td>
+                            </tr>
+                            <tr>
+                                <td>Number of elements</td>
+                                <td>
+                                    <code>array<strong>.size</strong></code>
+                                </td>
+                                <td>
+                                    <p><code>[]<strong>.size</strong> # =&gt; 0</code>
+                                    </p>
+
+                                    <p><code>[1, 2, 3]<strong>.size</strong> # =&gt; 3</code>
+                                    </p>
+
+                                    <p><code>["foo", "bar"]<strong>.size</strong> # =&gt; 2</code>
+                                    </p>
+                                </td>
+                                <td>Returns the number of elements in an Array.</td>
+                            </tr>
+                            <tr>
+                                <td>Access</td>
+                                <td>
+                                    <code>
+        array<strong>[</strong><em>position</em><strong>]</strong>
+      </code>
+                                </td>
+                                <td>
+                                    <pre><code>array = ["hi", "foo", "bar"]
+array<strong>[</strong><em>0</em><strong>]</strong> # =&gt; "hi"
+array<strong>[</strong><em>2</em><strong>]</strong> # =&gt; "bar"</code></pre>
+                                </td>
+                                <td>As an Array is a collection of different elements, you often want to access a single element of the Array. Arrays are indexed by numbers so you can use a number to access an individual element. Be aware that the numbering actually starts with "0" so the first element actually is the 0th. And the last element of a three element array is element number 2.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Adding an element</td>
+                                <td>
+                                    <code>array <strong>&lt;&lt;</strong> <em>element</em></code>
+                                </td>
+                                <td>
+                                    <pre><code>array = [1, 2, 3]
+array <strong>&lt;&lt;</strong> <em>4</em>
+array # =&gt; [1, 2, 3, 4]
+</code></pre>
+                                </td>
+                                <td>
+                                    Adds the element to the end of the array, increasing the size of the array by one.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Assigning</td>
+                                <td>
+                                    <code>array<strong>[</strong><em>number</em><strong>] =
+      </strong> <em>value</em></code>
+                                </td>
+                                <td>
+                                <pre><code>array = ["hi", "foo", "bar"]
+array<strong>[</strong><em>2</em><strong>] =</strong> <em>"new"</em>
+array # =&gt; ["hi", "foo", "new"]</code></pre>
+                                </td>
+                                <td>Assigning new Array Values works a lot like accessing them; use an equals sign to set a new value. Voila! You changed an element of the array! Weehuuuuu!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Delete at index</td>
+                                <td><code>
+      array<strong>.delete_at</strong><em>(i)</em>
+    </code>
+                                </td>
+                                <td>
+                                    <pre><code>array = [0, 14, 55, 79]
+array<strong>.delete_at</strong><em>(2)</em>
+array # =&gt; [0, 14, 79]
+</code></pre>
+                                </td>
+                                <td>
+                                    Deletes the element of the array at the specified index. Remember that indexing starts at 0. If you specify an index larger than the number of elements in the array, nothing will happen.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Iterating</td>
+                                <td>
+                                    <code>array<strong>.each</strong> <em>do |e| .. end</em></code>
+                                </td>
+                                <td>
+                                    <p><code>
+        persons<strong>.each</strong> <em>do |p| puts p.name end</em>
+      </code>
+                                    </p>
+
+                                    <p><code>
+        numbers<strong>.each</strong> <em>do |n| n = n * 2 end</em>
+      </code>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        "Iterating" means doing something for <em>each</em> element of the array. Code placed between <em>do</em> and <em>end</em> determines what is done to each element in the array.
+                                    </p>
+
+                                    <p>
+                                        The first example prints the name of every person in the array to the console. The second example simply doubles every number of a given array.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- TABLE -->
+                    <!-- GIST -->
+        </div>
+        <div class="topic">
+            <h2>Hashes</h2>
+            <p>Hashes associate a key to some value. You may then retrieve the value based upon its key. This construct is called a dictionary in other languages, which is appropriate because you use the key to "look up" a value, as you would look up a definition for a word in a dictionary. Each key must be unique for a given hash but values can be repeated. Hashes can map from anything to anything! You can map from Strings to Numbers, Strings to Strings, Numbers to Booleans... and you can mix all of those! Although it is common that at least all the keys are of the same class. Symbols are especially common as keys. Symbols look like this: :symbol. A symbol is a colon followed by some characters. You can think of them as special strings that stand for (symbolize) something! We often use symbols because Ruby runs faster when we use symbols instead of strings.</p>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th class="concept">Concept</th>
+                        <th class="usage">Usage</th>
+                        <th class="hash-example">Examples</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>Creating</td>
+                        <td><code>
+      <strong>{</strong>key <strong>=&gt;</strong> value<strong>}</strong>
+    </code>
+                        </td>
+                        <td>
+                            <p><code>
+        <strong>{</strong>:hobby <strong>=&gt;</strong>
+        "programming"<strong>}</strong>
+      </code>
+                            </p>
+                            <pre><code><strong>{</strong>42 <strong>=&gt;</strong> "answer", "score" <strong>=&gt;</strong> 100,
+ :name <strong>=&gt;</strong> "Tobi"<strong>}</strong>
+</code></pre>
+                        </td>
+                        <td>
+                            You create a hash by surrounding the key-value pairs with curly braces. The arrow always goes from the <em>key</em> to the
+                            <em>value</em> depicting the meaning: <em>"This key points to this
+      value."</em>. Key-value pairs are then separated by commas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accessing</td>
+                        <td><code>hash<strong>[</strong>key<strong>]</strong></code>
+                        </td>
+                        <td>
+                            <pre><code>hash = {:key =&gt; "value"}
+hash<strong>[</strong>:key<strong>]</strong> # =&gt; "value"
+hash<strong>[</strong>foo<strong>]</strong> # =&gt; nil
+</code></pre>
+                        </td>
+                        <td>
+                            Accessing an entry in a hash looks a lot like accessing it in an <em>array</em>. However with a hash the key can be anything, not just numbers. If you try to access a key that does not exist, the value <code>nil</code> is returned, which is Ruby's way of saying "nothing", because if it doesn't recognize the key it can't return a value for it.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Assigning</td>
+                        <td>
+                            <code>hash<strong>[</strong>key<strong>] =</strong> value</code>
+                        </td>
+                        <td>
+                            <pre><code>hash = {:a =&gt; "b"}
+hash<strong>[</strong>:key<strong>] =</strong> "value"
+hash # =&gt; {:a=&gt;"b", :key=&gt;"value"}
+</code></pre>
+                        </td>
+                        <td>
+                            Assigning values to a hash is similar to assigning values to an array. With a hash, the key can be a number or it can be a symbol, string, number... or anything, really!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deleting</td>
+                        <td><code>hash<strong>.delete</strong><em>(key)</em></code>
+                        </td>
+                        <td>
+                            <pre><code>hash = {:a =&gt; "b", :b =&gt; 10}
+hash<strong>.delete</strong><em>(:a)</em>
+hash # =&gt; {:b=&gt;10}
+</code></pre>
+                        </td>
+                        <td>
+                            You can delete a specified key from the hash, so that the key and its value can not be accessed.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class = "topic">
+          <h2>Sublime Shortcuts</h2>
+          <table class="table table-striped">
+  <tbody><tr>
+    <th>Function</th>
+    <th class="shortcut">Shortcut</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Save file</td>
+    <td><strong>Ctrl + S</strong></td>
+    <td>
+      Saves the currently open file. If it was a new file you may also be
+      asked where to save it.
+    </td>
+  </tr>
+  <tr>
+    <td>Undo</td>
+    <td><strong>Ctrl + Z</strong></td>
+    <td>
+      Undo the last change you made to the current file. Can be applied
+      multiple times in succession to undo multiple changes.
+    </td>
+  </tr>
+  <tr>
+    <td>Redo</td>
+    <td><p><strong>Ctrl + Y</strong></p>
+
+      <p><em>or Ctrl + Shift + Z</em></p></td>
+    <td>
+      Redo what you just undid with <em>undo</em>, can also be done
+      multiple times.
+    </td>
+  </tr>
+  <tr>
+    <td>Find in File</td>
+    <td><strong>Ctrl + F</strong></td>
+    <td>
+      Search for a character sequence within the currently open file.
+      Hit <em>Enter</em> to progress to the next match.
+    </td>
+  </tr>
+  <tr>
+    <td>Find in all Files</td>
+    <td><strong>Ctrl + Shift + F</strong></td>
+    <td>Search for a character sequence in all files of the project.</td>
+  </tr>
+  <tr>
+    <td>Replace</td>
+    <td>
+      <p><strong>Ctrl + H</strong></p>
+
+      <p><em>or Ctrl + R</em></p>
+    </td>
+    <td>
+      Replace occurrences of the supplied character sequence with the
+      other supplied character sequence. Useful when renaming something.
+    </td>
+  </tr>
+  <tr>
+    <td>Copy</td>
+    <td><strong>Ctrl + C</strong></td>
+    <td>
+      Copy the currently highlighted text into the clipboard.
+    </td>
+  </tr>
+  <tr>
+    <td>Cut</td>
+    <td><strong>Ctrl + X</strong></td>
+    <td>Copy the highlighted text into the clipboard but delete it.</td>
+  </tr>
+  <tr>
+    <td>Paste</td>
+    <td><strong>Ctrl + V</strong></td>
+    <td>
+      Insert whatever currently is in the clipboard (through
+      <em>Copy</em> or <em>Cut</em>) at the current caret position.
+      Can insert multiple times.
+    </td>
+  </tr>
+  <tr>
+    <td>New File</td>
+    <td><strong>Ctrl + N</strong></td>
+    <td>Create a new empty file.</td>
+  </tr>
+  <tr>
+    <td>Search and open file</td>
+    <td><strong>Ctrl + P</strong></td>
+    <td>
+      Search for a file giving part of its name (<em>fuzzy search</em>).
+      Pressing <em>enter</em> will open the selected file.
+    </td>
+  </tr>
+  <tr>
+    <td>Comment</td>
+    <td><strong>Ctrl + /</strong></td>
+    <td>
+      Marks the selected text as a comment, which means that it will
+      be ignored. Useful when you want to see how something behaves or looks
+      without a specific section of code being run.
+    </td>
+  </tr>
+</tbody></table>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {background-color: #000000}
+table {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  table-layout: fixed;
+}
+
+#jumbotron {
+  width: 200px;
+  height: 130px;
+  margin: auto;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FF6633;
+  border:1px solid #ccc;
+  border-bottom:2px solid #bbb;
+  border-top:1px solid #ddd;
+  border-radius:10px;
+}
+#scoreboard {
+  background-color: #FFFFFF;
+}
+
+td {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid black;
+  color:blue;
+  height: 100px;
+  font-size: 3em;
+  font-weight: 2;
+  text-align: center;
+  border:1px solid #ccc;
+  border-bottom:2px solid #bbb;
+  border-top:1px solid #ddd;
+  border-radius:10px;
+}
+.undefined {
+  background-color: #FFFFFF
+}
+.two {background-color: #FFFFCC;}
+.four { background-color: #FFFF66;}
+.eight { background-color: #FFCC66;}
+.sixteen { background-color: #FFCC00;}
+.thirty-two { background-color: #FF99CC;}
+.sixty-four { background-color: #FF9966;}
+.one-two-eight {background-color: #FF9900;}
+.two-five-six {background-color: #FF66CC;}
+.five-one-two {background-color: #FF6666;}
+.ten-two-four {background-color: #FF6600;}
+.twenty {background-color: #FF0000;}
