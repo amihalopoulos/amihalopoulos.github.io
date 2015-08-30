@@ -1,0 +1,157 @@
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+#park{
+  width: 1000px;
+  height: 600px;
+  border: 2px solid white;
+  margin: 0 auto;
+  background: #FFFFFF;
+  position: relative;
+  clear: right;
+  border: 5px dashed #33CC00;
+}
+
+#dog{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 300px;
+}
+
+#home{
+  right: 10px;
+  top: 225px;
+  width: 150px;
+  height: auto;
+  transform: rotate(90deg);
+  position: absolute;
+}
+#dogcatcher1{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+#dogcatcher2{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 300px;
+  top: 100px;
+}
+#dogcatcher3{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  top: 100px;
+}
+#dogcatcher4{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 700px;
+  top: 100px;
+}
+#dogcatcher5{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 900px;
+  top: 100px;
+}
+#dogcatcher6{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 950px;
+  top: 100px;
+}
+#dogcatcher7{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 100px;
+  top: 300px;
+}
+#dogcatcher8{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 300px;
+  top: 300px;
+}
+#dogcatcher9{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  top: 300px;
+}
+#dogcatcher10{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 700px;
+  top: 300px;
+}
+#dogcatcher11{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 900px;
+  top: 300px;
+}
+#dogcatcher12{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 950px;
+  top: 300px;
+}
+#dogcatcher13{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 100px;
+  top: 450px;
+}
+#dogcatcher14{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 300px;
+  top: 450px;
+}
+#dogcatcher15{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  top: 450px;
+}
+#dogcatcher16{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 700px;
+  top: 450px;
+}
+#dogcatcher17{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 900px;
+  top: 450px;
+}
+#dogcatcher18{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 950px;
+  top: 450px;
+}
