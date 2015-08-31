@@ -121,7 +121,7 @@ Game.prototype = {
           bombs.push([x,y])
         };
         if (self.objectBoard[x][y]["status"] === "flagged") {
-          flags.push[x,y]
+          flags.push([x,y])
         };
       };
 
