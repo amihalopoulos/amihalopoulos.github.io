@@ -110,13 +110,12 @@ Game.prototype = {
     }
     return nestArray
   },
-  checkForWin: function() {
+  allBombsFlagged: function() {
     var self = this
     var bombs = []
     var flags = []
     for (var x = 0; x < self.objectBoard.length; x++) {
       for (var y = 0; y < self.objectBoard[x].length; y++) {
-        self.objectBoard[x][y]
         if (self.objectBoard[x][y]["bomb"]) {
           bombs.push([x,y])
         };
@@ -127,6 +126,26 @@ Game.prototype = {
 
     };
     return bombs.equals(flags)
+  },
+  allNotBombsClicked: function() {
+    var self = this
+    var notBombs = []
+    var clicked = []
+    for (var x = 0; x < self.objectBoard.length; x++) {
+      for (var y = 0; y < self.objectBoard[x].length; y++) {
+        if (!self.objectBoard[x][y]["bomb"]) {
+          notBombs.push([x,y])
+        };
+        if (self.objectBoard[x][y]["status"] === "clicked") {
+          clicked.push([x,y])
+        };
+      };
+
+    };
+    return notBombs.equals(clicked)
+  },
+  checkForWin: function() {
+    return (this.allBombsFlagged() && this.allNotBombsClicked())
   }
 }
 
