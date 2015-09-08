@@ -31,3 +31,14 @@ td {
 #face {
   height: 20px;
 }
+#clock {
+  display: inline-block;
+  padding:  4px 4px 0 ;
+  width: 100px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
