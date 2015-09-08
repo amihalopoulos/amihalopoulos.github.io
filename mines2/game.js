@@ -1,8 +1,8 @@
 function Game(size) {
-  this.size = size
-  this.gameOver = false
-  this.board = placeBombs(this.size)
-  this.objectBoard = this.splitBoardIntoRows()
+  this.size = size;
+  this.gameOver = false;
+  // this.board = placeBombs(this.size)
+  this.objectBoard = this.newGame();
 }
 Game.prototype = {
   constructor: Game,
@@ -101,15 +101,6 @@ Game.prototype = {
     })
     return neighbors
   },
-  splitBoardIntoRows: function() {
-    var nestArray = []
-    var hashBoard = hashify(this.board)
-    while (hashBoard.length > 0) {
-      row = hashBoard.splice(0,Math.sqrt(this.size))
-      nestArray.push(row)
-    }
-    return nestArray
-  },
   allBombsFlagged: function() {
     var self = this
     var bombs = []
@@ -145,9 +136,29 @@ Game.prototype = {
     return notBombs.equals(clicked)
   },
   checkForWin: function() {
-    return (this.allBombsFlagged() && this.allNotBombsClicked())
+    if (this.allBombsFlagged() && this.allNotBombsClicked()) {
+      this.gameOver = true
+      return true
+    };
+  },
+  newGame: function() {
+    var locations = placeBombs(this.size)
+    var board = splitBoardIntoRows(locations, this.size)
+    this.objectBoard = board
+    this.gameOver = false
+    return board
   }
 }
+
+var splitBoardIntoRows = function(board, size) {
+    var nestArray = []
+    var hashBoard = hashify(board)
+    while (hashBoard.length > 0) {
+      row = hashBoard.splice(0,Math.sqrt(size))
+      nestArray.push(row)
+    }
+    return nestArray
+  }
 
 var placeBombs = function(num) {
   var boardWithBombs = Array.apply(null, new Array(num)).map(Number.prototype.valueOf, 0);
