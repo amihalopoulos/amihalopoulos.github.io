@@ -27,3 +27,7 @@ td {
 .clicked {
   background-color: #bbb;
 }
+
+#face {
+  height: 20px;
+}
