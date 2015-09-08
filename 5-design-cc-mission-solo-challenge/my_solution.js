@@ -1,3 +1,4 @@
+
 function Dog(x,y,img) {
   this.x = x;
   this.y = y;
