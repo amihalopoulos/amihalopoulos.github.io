@@ -10,6 +10,7 @@ $(document).ready(function(){
   //initialize nav
   $("#dots").find('li').first().addClass('active');
 
+
   function goTo(i){
     $(dots).removeClass('active');
     $("#dots li").eq(i).addClass('active');
@@ -47,8 +48,23 @@ $(document).ready(function(){
   });
   goTo(0);
 
-  //loop to cycle through
-  setInterval(function(){
+var timer;
+
+function startTimer() {
+    timer = setInterval(function () {
       $("#nxt").trigger('click');
     },5000);
+}
+
+$('.img').hover(function (ev) {
+    clearInterval(timer);
+}, function (ev) {
+    startTimer();
+});
+startTimer();
+
+  //loop to cycle through
+  // setInterval(function(){
+  //     $("#nxt").trigger('click');
+  //   },5000);
 });
