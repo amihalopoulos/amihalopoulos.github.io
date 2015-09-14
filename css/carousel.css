@@ -57,14 +57,19 @@
   left: 57%;
 }
 .bottom {
-  width: 42%;
+  width: 716px;
   position:absolute;
   bottom:0;
   margin: 0 auto;
   left: 0;
   right: 0;
-  background: rgba(255,255,255,0.5);
+  background: #fff;
+  border: 1px solid black;
   visibility: hidden;
+}
+.bottom h6 {
+  padding: 0;
+  margin: 0;
 }
 
 .img:hover > .bottom {
