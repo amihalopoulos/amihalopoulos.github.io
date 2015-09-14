@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Alexander Mihalopoulos</title>
     <link rel="stylesheet" type="text/css" href="css/blog-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="icons/alexei-prof-black.png" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/carousel.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+</head>
 
+<body>
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Alexei Mihalopoulos</h1>
@@ -29,13 +27,75 @@
             <h5>Here is my <a href="pages/Alexei_Mihalopoulos_RESUME.pdf" target="_blank">resume</a></h5>
             <h5 id="projects">Here are some of my <a href="#" id="project_link">projects</a></h5>
             <div class="list hidden">
-              <p><a href="./pages/2048.html">2048</a></p>
+                <!-- <p><a href="./pages/2048.html">2048</a></p>
               <p><a href="http://infomys.herokuapp.com">Infomys Strength Tracker</a></p>
               <p><a href="./mines2/index.html">Minesweeper</a></p>
-              <p><a href="http://tubegenius.herokuapp.com">TubeGenius</a></p>
+              <p><a href="http://tubegenius.herokuapp.com">TubeGenius</a></p> -->
+                <div id="container">
+                    <div id="prev1">
+                        <h1> previous </h1>
+                    </div>
+                    <div id="wrapper">
+                        <ul id="images">
+                            <li id="0" class="car selected">
+                                <div class="img">
+                                    <img class="img" src="icons/infomys.png">
+                                    <div class="bottom">
+                                        <h1>Infomys</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="1" class="car hidden">
+                                <div class="img">
+                                    <img class="img" src="icons/tubgenius.png">
+                                    <div class="bottom">
+                                        <h1>TubeGenius</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="2" class="car hidden">
+                                <div class="img">
+                                    <img class="img" src="icons/mines.png">
+                                    <div class="bottom">
+                                        <h1>Minesweeper</h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="3" class="car hidden">
+                                <div class="img">
+                                    <img class="img" src="icons/2048.png">
+                                    <div class="bottom">
+                                        <h1>2048</h1>
+                                    </div>
+                                </div>
+                            </li>
+       <!--                      <li id="4" class="car hidden">
+                                <div class="img">
+                                    <img class="img" src="icons/2048.png">
+                                    <div class="bottom">
+                                        Hello this is some text about this image Hello this is some text about this image Hello this is some text about this image
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div id="nxt1">
+                        <h1> next </h1>
+                    </div>
+                </div>
+                <div id="wrapper">
+                    <span id="prev"><</span>
+                    <ul id="dots">
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <!-- <li> </li> -->
+                    </ul>
+                    <span id="nxt">></span>
+                </div>
             </div>
             <h5>Send me a <a href="mailto:amihalop@gmail.com" target="_top" class="media">message</a></h5>
-
             <br>
             <div id="info">
                 <!-- <a href="https://twitter.com/lextheboywonder" target="_blank" class='media'><img src="icons/twitter (1).png">
@@ -48,14 +108,10 @@
                 <a href="http://www.google.com/+AlexanderMihalopoulos" target='_blank' class='media'><img src='icons/google_plus.png'>
                 </a>
             </div>
-
         </div>
-
     </header>
-
-
-<!-- Old stuff -->
- <!--    <div id='top_row'>
+    <!-- Old stuff -->
+    <!--    <div id='top_row'>
       <h1 class='name'>Alexander A. <img id='pic' src='icons/alexei-prof-black.png'> Mihalopoulos</h1>
   </div>
   <div id="navbar">
@@ -93,10 +149,10 @@
       <p>Email: amihalop@gmail.com</p>
     </div>
   </div> -->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
