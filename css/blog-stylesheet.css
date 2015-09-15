@@ -106,6 +106,14 @@ p {
   border-right: 6px solid #ddd;
   padding-right: 20px;
 }
+.dropdown{
+  visibility: hidden;
+}
+.dropdown img {
+  /*visibility: hidden;*/
+  height: 20px;
+  width: auto;
+}
 .welcome-content, #container {
   text-align: center;
   float: right;
@@ -119,6 +127,45 @@ p {
   padding: 20px;
   vertical-align: middle;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.drop-nav {
+  background: #ddd;
+  /*border: 1px solid #000;*/
+}
+.dropdown,
+.flyout {
+  position: relative;
+}
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  padding: 5px;
+}
+.drop-nav li:hover {
+    background-color: #fff;
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block;
+}
+.flyout-nav {
+  left: 100%;
+  top: 0;
+}
+.flyout:hover a,
+.flyout-nav {
+  background: #395066;
+}
+
 @media only screen and (max-width: 1050px) {
     /*body { background-color: blue;}*/
     .sidebar-wrapper {
@@ -155,5 +202,13 @@ p {
         /*display: none;*/
         left: 10%;
         top: 20%;
+    }
+    #paragraph {
+        display: none;
+    }
+    .dropdown {
+        visibility: visible;
+        padding: 0 20px;
+        cursor: pointer;
     }
 }

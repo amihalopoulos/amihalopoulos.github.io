@@ -56,12 +56,25 @@ function startTimer() {
     },5000);
 }
 
-$('.img').hover(function (ev) {
-    clearInterval(timer);
-}, function (ev) {
-    startTimer();
-});
+// $('.img').hover(function (event) {
+//     clearInterval(timer);
+// }, function (event) {
+//     startTimer();
+// });
 startTimer();
+
+$('.list').on({
+    mouseenter: function() {
+      console.log($(this).data('timer'))
+        clearInterval(timer)
+        clearInterval( $(this).data('timer') );
+    },
+    mouseleave: function() {
+        $(this).data('timer', setInterval(function () {
+            $('#nxt').trigger('click');
+        }, 4000));
+    }
+}).trigger('mouseleave');
 
   //loop to cycle through
   // setInterval(function(){
