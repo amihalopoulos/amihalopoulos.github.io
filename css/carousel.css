@@ -110,3 +110,17 @@
         top: 89%;
     }
 }
+@media only screen and (max-width: 749px) {
+    .img {
+        height: 250px;
+        width: auto;
+        /*display: none;*/
+    }
+    .bottom {
+      width: 446px;
+    }
+    #wrapper {
+      left: 25%;
+      top: 60%;
+    }
+}

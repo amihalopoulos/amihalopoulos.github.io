@@ -47,14 +47,11 @@ p {
   margin: 0;
   font-size: 14px;
   text-align: left;
-  /*margin-left: 48%;*/
   font-weight: bold;
 }
 
 .center {
-  /*display: table-cell;*/
   text-align: center;
-  /*vertical-align: middle;*/
 }
 .prof {
   height: 300px;
@@ -62,21 +59,6 @@ p {
   margin: 0 auto;
   left: 0;
   right: 0;
-}
-
-
-/* Header */
-
-.header {
-  display: table;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /*background: url(../icons/boat.JPG) no-repeat center center scroll;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
 /* About */
@@ -110,7 +92,6 @@ p {
   visibility: hidden;
 }
 .dropdown img {
-  /*visibility: hidden;*/
   height: 20px;
   width: auto;
 }
@@ -135,7 +116,6 @@ ul {
 }
 .drop-nav {
   background: #ddd;
-  /*border: 1px solid #000;*/
 }
 .dropdown,
 .flyout {
@@ -210,5 +190,10 @@ ul {
         visibility: visible;
         padding: 0 20px;
         cursor: pointer;
+    }
+}
+@media only screen and (max-width: 551px) {
+    #info {
+        /*bottom: 0;*/
     }
 }
