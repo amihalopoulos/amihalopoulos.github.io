@@ -124,3 +124,23 @@
       top: 60%;
     }
 }
+@media only screen and (max-width: 551px) {
+    .img {
+        top: 20%;
+    }
+    #wrapper {
+      top: 70%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .img {
+      height: 200px;
+      width: auto;
+    }
+    #wrapper, .bottom {
+      top: 60%;
+    }
+    .bottom {
+      width: 357px;
+    }
+}

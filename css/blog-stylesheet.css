@@ -193,7 +193,17 @@ ul {
     }
 }
 @media only screen and (max-width: 551px) {
-    #info {
-        /*bottom: 0;*/
+    li #info {
+        bottom: 0;
+    }
+    .sidebar-content {
+        height: 150px;
+    }
+    .dropdown, #info {
+        padding-top: -15px;
+        margin-top: -15px;
+    }
+    .img {
+        top: 30%;
     }
 }
