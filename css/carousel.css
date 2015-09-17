@@ -26,6 +26,7 @@
 .bottom {
   width: 716px;
   position:absolute;
+  overflow: scroll;
   bottom:0;
   margin: 0 auto;
   left: 0;
